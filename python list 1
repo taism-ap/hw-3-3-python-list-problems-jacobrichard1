@@ -1,0 +1,33 @@
+# import the randint function from the random module
+from random import randint
+
+# create a function to generate a list of "size" random integers
+# up to a maximum of "largest"
+
+def random_list(largest,size):
+  # create an empty list
+  l = []
+  # add a random number to the list the appropriate number of times
+  for i in range(size):
+    n = randint(0,largest-1)
+    l.append(n)
+  #print the list to check
+  return(l)
+#call the function
+l = random_list(10,100)
+print(l)
+# create function called find_number
+def find_number(l):
+  x = input("Choose a value to find:")
+  #set x equal to the input what value wanted to be found
+  z = 0
+  for j in l:
+    # j is is the element in l
+    if j == int(x):
+    #if the element is equal to x add one to z
+      z = z + 1
+  return z
+ 
+
+print (find_number(l))
+https://repl.it/@JacobBrianBrian/pythonlist1
