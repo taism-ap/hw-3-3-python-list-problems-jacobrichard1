@@ -1,0 +1,14 @@
+#create function find_minimum
+def find_minimum(l):
+  #set x equal to 1 more then highest possible integer
+  x = 11
+  #makes the for loop of i in list l
+  for i in l:
+    #if the value of element i is less then the value of x, x = i
+    if i < x:
+      x = i
+  return x
+print("the lowest value is:")
+print (find_minimum(l))
+
+https://repl.it/@JacobBrianBrian/pythonlist3
